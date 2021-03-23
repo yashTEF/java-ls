@@ -8,10 +8,12 @@ The idea behind the Language Server Protocol (LSP) is to standardize the protoco
 
 LSP is a win for both language providers and tooling vendors!
 
+
+![Working of Language Server](https://github.com/yashTEF/java-ls/blob/main/LanguageServerDemo.gif)
+
 # How it works
 
 A language server runs as a separate process and development tools communicate with the server using the language protocol over JSON-RPC. Below is an example for how a tool and a language server communicate during a routine editing session:
-
 
 
  1)   The user opens a file (referred to as a document) in the tool: The tool notifies the language server that a document is open (‘textDocument/didOpen’). From now on, the truth about the contents of the document is no longer on the file system but kept by the tool in memory. The contents now has to be synchronized between the tool and the language server.
