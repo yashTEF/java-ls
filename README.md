@@ -1,4 +1,4 @@
-# java-ls
+# JAVA- Language Server
 # What is the Language Server Protocol?
 Implementing support for features like autocomplete, goto definition, or documentation on hover for a programming language is a significant effort. Traditionally this work must be repeated for each development tool, as each provides different APIs for implementing the same features.
 
