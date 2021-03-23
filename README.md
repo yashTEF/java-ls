@@ -1,5 +1,5 @@
 # JAVA- Language Server
-# What is the Language Server Protocol?
+# What is a Language Server Protocol?
 Implementing support for features like autocomplete, goto definition, or documentation on hover for a programming language is a significant effort. Traditionally this work must be repeated for each development tool, as each provides different APIs for implementing the same features.
 
 The idea behind a Language Server is to provide the language-specific smarts inside a server that can communicate with development tooling over a protocol that enables inter-process communication.
