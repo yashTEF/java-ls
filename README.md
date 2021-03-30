@@ -1,5 +1,31 @@
-# JAVA- Language Server
-# What is a Language Server Protocol?
+## A GLIMPSE INTO THE MODERN APPROACH TO IMPLEMENTING CODE ACTIONS, AUTO-COMPLETION.
+
+
+
+
+
+
+
+## OBJECTIVE -
+The main objective of the project will be to create a basic implementation of a modern java language server, utilising Eclipse's LSP4J(LANGUAGE SERVER PROTOCOL FOR JAVA) and
+is inspired from current working implementation of the same [eclipse.jdt.ls](https://github.com/eclipse/eclipse.jdt.ls/)
+
+
+
+
+
+
+## Project Dependencies -
+1) OSGI Framework for Plugin Development
+2) LSP4J project for implementation of LS protocol in java
+3) LSP4E for binding the java language server to the Eclipse's generic editors.
+
+
+
+
+
+
+## What is a Language Server Protocol?
 Implementing support for features like autocomplete, goto definition, or documentation on hover for a programming language is a significant effort. Traditionally this work must be repeated for each development tool, as each provides different APIs for implementing the same features.
 
 The idea behind a Language Server is to provide the language-specific smarts inside a server that can communicate with development tooling over a protocol that enables inter-process communication.
@@ -11,7 +37,7 @@ LSP is a win for both language providers and tooling vendors!
 
 ![Working of Language Server](https://github.com/yashTEF/java-ls/blob/main/LanguageServerDemo.gif)
 
-# How it works
+## How it works
 
 A language server runs as a separate process and development tools communicate with the server using the language protocol over JSON-RPC. Below is an example for how a tool and a language server communicate during a routine editing session:
 
