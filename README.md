@@ -22,7 +22,15 @@ is inspired from current working implementation of the same [eclipse.jdt.ls](htt
 
 
 
+## HOW IT WORKS?
 
+A Language Server consists of ServerSocket which is used to read into the state of a document or a workspace i.e. whether there were any changes made into the document.
+the language server will keep on listening to the state of the document , and as soon as it changes it will read the state and perform the respective code action
+
+The code actions will include-
+1) Hover on text
+2) Code completion
+3) Syntax Errors
 
 
 ## What is a Language Server Protocol?
