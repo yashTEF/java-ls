@@ -1,4 +1,4 @@
-## LANGUAGE SERVERS : A GLIMPSE INTO THE MODERN APPROACH TO IMPLEMENTING CODE ACTIONS, AUTO-COMPLETION.
+## CODEMININGS INSIDE LANGUAGE SERVERS
 
 
 
@@ -7,11 +7,26 @@
 
 
 ## OBJECTIVE -
-The main objective of the project will be to create a basic implementation of a modern java language server, utilising Eclipse's LSP4J(LANGUAGE SERVER PROTOCOL FOR JAVA) and
-is inspired from current working implementation of the same [eclipse.jdt.ls](https://github.com/eclipse/eclipse.jdt.ls/)
+The main objective of the project will be to add support for codeminings to a text editor using a Language Server.
 
 
+## What is a Codemining?
+A code mining represents a content that should be shown along with source text, like the number of references, a way to run tests (with run/debug icons), etc. The main goal of code mining is to help developer to understand more the written/writing code 
 
+For instance for a code sample
+```
+class A {
+}
+class B {
+/**
+A references 2
+Debug | Run
+*/
+
+ A obj1 = new A();
+ A obj2 = new A();
+}
+```
 
 
 
@@ -27,10 +42,7 @@ is inspired from current working implementation of the same [eclipse.jdt.ls](htt
 A Language Server consists of ServerSocket which is used to read into the state of a document or a workspace i.e. whether there were any changes made into the document.
 the language server will keep on listening to the state of the document , and as soon as it changes it will read the state and perform the respective code action
 
-The code actions will include-
-1) Hover on text
-2) Code completion
-3) Syntax Errors
+
 
 
 ## What is a Language Server Protocol?
